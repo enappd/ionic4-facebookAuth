@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      User Facebook Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="facebook-bg">
+  <div *ngIf="user">
+    <ion-row>
+      <ion-col class="title">
+        {{user.displayName}}
+      </ion-col>
+    </ion-row>
+    <ion-img class="profile-image" [src]="user.photoURL"></ion-img>
+    <ion-row *ngIf="user.email">
+      <ion-col col-3 padding-left class="label">
+        Email
+      </ion-col>
+      <ion-col col-9>
+        {{user.email}}
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="user.phoneNumber">
+      <ion-col col-3 padding-left class="label">
+        phoneNumber
+      </ion-col>
+      <ion-col col-9>
+        {{user.phoneNumber}}
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="danger">
+    <ion-title>
+      Logout
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

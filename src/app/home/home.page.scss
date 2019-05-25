@@ -1,0 +1,26 @@
+
+.facebook-bg {
+    --background: linear-gradient(#38a1f3, white);
+  }
+  .main {
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    ion-row {
+      margin: 10px;
+    }
+  }
+  .logo {
+    width: 40%;
+    margin: auto;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  ion-button {
+    width: 70vw;
+  }
