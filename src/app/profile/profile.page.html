@@ -30,6 +30,39 @@
         {{user.phoneNumber}}
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col col-3 padding-left class="label">
+        Creation Time
+      </ion-col>
+      <ion-col col-9>
+        {{user.creationTime}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 padding-left class="label">
+        last Sign In Time
+      </ion-col>
+      <ion-col col-9>
+        {{user.lastSignInTime}}
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 padding-left class="label">
+        Is User Anonymous?
+      </ion-col>
+      <ion-col col-9>
+        {{user.isAnonymous}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 padding-left class="label">
+        Is Email Verified?
+      </ion-col>
+      <ion-col col-9>
+        {{user.emailVerified}}
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>
 <ion-footer (click)="logout()">
